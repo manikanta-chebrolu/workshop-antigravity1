@@ -1,0 +1,81 @@
+# =========================================================================
+# GITIGNORE - NEXUS AI STUDIO
+# Prevents sensitive environment variables, secrets, dependencies,
+# and system artifacts from being committed to GitHub.
+# =========================================================================
+
+# -------------------------------------------------------------------------
+# 1. Environment Variables & Secret Credentials (CRITICAL)
+# -------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+
+# Keep the example template committed so collaborators know what keys are needed
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# -------------------------------------------------------------------------
+# 2. Node Dependencies
+# -------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -------------------------------------------------------------------------
+# 3. Production Builds & Cache
+# -------------------------------------------------------------------------
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.eslintcache/
+
+# -------------------------------------------------------------------------
+# 4. Operating System & Editor Files
+# -------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Editors & IDEs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# -------------------------------------------------------------------------
+# 5. Temporary & Runtime Files
+# -------------------------------------------------------------------------
+tmp/
+temp/
+*.tmp
+logs/
+*.pid
+*.seed
