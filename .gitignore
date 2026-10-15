@@ -42,6 +42,7 @@ out/
 .cache/
 .parcel-cache/
 .eslintcache/
+.vercel
 
 # -------------------------------------------------------------------------
 # 4. Operating System & Editor Files
